@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        button {
+            border: none;
+            color: black;
+            padding: 15px 15px;
+            text-align: center;
+            border-radius: 12px;
+        }
+
+        p {
+            color: green;
+        }
+
+        p {
+            animation: change 5s step-end both;
+        }
+       
+        @keyframes change {
+            from {
+                color:chartreuse;
+            }
+
+            to {
+                color:brown
+            }
+        }
+
+        button:hover {
+            text-decoration: none;
+            font-size: 15px;
+            cursor: pointer;
+            background-color: #806ae4;
+        }
+    </style>
+    <script>
+        function addNumbers() {
+            var number;
+            var result = "";
+
+            number = Number(document.getElementById("number").value);
+
+            for (var i = 1; i <= 10; i++) {
+                result = result + "<p>" + number + "*" + i + "=" + number * i + "</p>";
+            }
+
+            document.getElementById("result").innerHTML = result;
+
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <section>
+        Enter the number : <input id="number" />
+        <button onclick="addNumbers()">Print Multiplication table</button>
+        <div id="result">
+    </section>
+</body>
+
+</html>

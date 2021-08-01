@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment
+    </title>
+    <style>
+        * {
+            /* border box tells the browser to include the border and padding in width and height in  */
+            box-sizing: border-box;
+        }
+
+        .item {
+            border: 2px solid blue;
+            margin: 4px;
+            padding: 10px 2px;
+            background-color: gray;
+            text-align: center;
+
+        }
+
+        p {
+            font: italic;
+            text-align: justify;
+            text-indent: 0.5cm;
+            font-size: larger;
+            text-align: justify;
+            display: inline-block;
+            margin-top: -30px;
+        }
+
+        h3 {
+            color: black;
+            background-color: rgb(245, 97, 126);
+            border: 2px solid black;
+            padding: 12px;
+            float: right;
+            display: block;
+            position: relative;
+            top: -31px;
+            right: -4px;
+        }
+        @media(max-width:767px) {
+            #chicken {
+               
+                width: 100%;
+            }
+
+            #beef{
+                
+                width: 100%;
+            }
+
+            #sushi{
+               
+                width: 100%;
+            }
+        }
+
+        @media(min-width:768px) and (max-width:991px) {
+            #chicken{
+                float: left;
+                width: 48%;
+            }
+
+            #beef{
+                float: right;
+                width: 48%;
+            }
+
+            #sushi{
+                clear: both;
+                /* float:; */
+                width: 99%;
+            }
+        }
+        @media(min-width:992px){
+            #chicken {
+            float:left;
+            width: 32.3%;
+            height: 25%;
+        }
+
+        #beef {
+            float: left;
+            width:32.3%;
+            height: 25%;
+        }
+
+        #sushi{
+            /* clear: both; */
+            float:left;
+            width: 32.3%;
+            height: 25%;
+        }
+        }
+        .chickenH{
+            background-color: pink;
+        }
+        .beefH{
+                background-color: tomato;
+        }
+        .sushiH{
+            background-color: lightyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="chicken" class="item">
+        <h3 class="chickenH">Chicken</h3>
+        <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore temporibus ea 
+            nihil assumenda cupiditate ab facilis explicabo. Velit nulla tempora aliquam laudantium in tenetur facilis
+             quaerat dignissimos culpa, adipisci
+             accusantium excepturi eligendi eum optio sequi dolorem quibusdam cumque?</p>
+    </div>
+    <div id="beef" class="item">
+        <h3 class="beefH">Beef</h3>
+        <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore temporibus ea 
+            nihil assumenda cupiditate ab facilis explicabo. Velit nulla tempora aliquam laudantium in tenetur facilis
+             quaerat dignissimos culpa, adipisci
+             accusantium excepturi eligendi eum optio sequi dolorem quibusdam cumque?</p>
+    </div>
+    <div id="sushi" class="item">
+        <h3 class="sushiH">Sushi </h3>
+        <p >
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore temporibus ea 
+            nihil assumenda cupiditate ab facilis explicabo. Velit nulla tempora aliquam laudantium in tenetur facilis
+             quaerat dignissimos culpa, adipisci
+             accusantium excepturi eligendi eum optio sequi dolorem quibusdam cumque?</p>
+    </div>
+</body>
+
+</html>

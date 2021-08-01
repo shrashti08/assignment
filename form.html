@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<style>
+    h1{
+        color: darkblue;
+        text-align: center;
+    }
+</style>
+<body>
+    <h1>This is HTML Forms tutorial</h1>
+
+    <form action="backend.php">
+        <label for="name"> Name</label>
+        <div>
+            <input type="text" id="name">
+        </div>
+        <br>
+        <label for="role">Role</label>
+        <div>
+            <input type="text" id=role>
+        </div>
+        <br>
+        <label for="age">Age</label>
+        <div>
+            <input type="number" name="my number" id="age">
+        </div>
+        <br>
+        <label for="email">Email</label>
+        <div>
+            <input type="email" id="email">
+        </div>
+        <br>
+        <label for="mobile_no">Mobile no</label>
+        <div>
+            <input type="number" id="mobile_no">
+        </div>
+        <br>
+        <label for="date">Date</label>
+        <div>
+            <input type="date" name="my date" id="date">
+        </div>
+        <br>
+        <div>
+            Are your eligible: <input type="checkbox">
+        </div>
+        <br>
+
+        <div>
+            Gender: Male <input type="radio" name="my radio"> Female <input type="radio" name="my radio"> other <input
+                type="radio" name="my radio">
+        </div>
+        <br>
+        
+        <div>
+            <label for="university">College Name</label>
+            <select name="college name" id="university">
+                <option value="spm">shyama prasad mukherji college</option>
+                <option value="shivaji">Shivaji college</option>
+                <option value="matrayi">Matrayi college</option>
+                <option value="hindu">hindu college</option>
+                <option value="stipens">stiphens college</option>
+                <option value="hansraj">Hansraj college</option>
+            </select>
+        </div>
+        <br>
+        <label for="yourself"> Write about youself..? </label>
+        <div>
+            
+            <textarea name="text area" cols="30" rows="10" id=yourself></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit now">
+            <input type="Reset" value="Reset now">
+        </div>
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>pseudo class selctors</title>
+</head>
+<style>
+	ul li{
+		list-style: none;			/*boot point went away*/
+	}
+	a:link, a:visited{
+		text-decoration:none;
+		background-color: lightgreen;
+		border:1px solid green;
+		color: black;
+		display: block;
+		width: 250px;
+		text-align: center;
+		margin-bottom: 2px;			/*shring and open outside the block*/
+		padding: 4px;				/*shrink and open inside the block */
+	}
+	a:hover, a:active{
+		background-color: pink;
+		color: purple;
+	}
+	ul li:nth-child(3){
+		font-size: 20px;
+
+	}
+	section div:nth-child(even):hover {
+		background-color: grey;
+		cursor: pointer;
+	}
+	body{
+		background-color: lightgray;
+	}
+</style>
+
+<body>
+	<h1></h1>
+	</header>
+	<ul>
+		<li><a href="/">Home</a></li>
+		<li><a href="http://goo.gl/V0Wl6s" target="_blank">AngularJS Course</a></li>
+		<li><a href="http://www.facebook.com/CourseWebDev" target="_blank">Facebook Fan Page</a></li>
+	</ul>
+	</header>
+	<section>
+	<div>Div 1</div>
+	<div>Div 2</div>
+	<div>Div 3</div>
+	<div>Div 4</div>
+	<div>Div 5</div>
+	<div>Div 6</div>
+	<div>Div 7</div>
+	<div>Div 8</div>
+	<div>Div 9</div>
+	<div>Div 10</div>
+	<div>Div 11</div>
+	<div>Div 12</div>
+	<div>Div 13</div>
+	<div>Div 14</div>
+	</section>
+
+
+</body>
+</html>
